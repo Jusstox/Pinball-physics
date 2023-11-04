@@ -1,7 +1,6 @@
 # Pinball Game Physics II
 
 This project is a pinball made by ourselves with [Box2D](https://box2d.org) and SDL 
-[Repository](https://github.com/Jusstox/Pinball-physics)
 
 # **Members**:
 ### Marc Avante 
