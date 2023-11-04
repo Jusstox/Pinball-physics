@@ -1,29 +1,28 @@
 # Pinball Game Physics II
 
-This project is a pinball made by ourselves with box2d and SDL
+This project is a pinball made by ourselves with [Box2D](https://box2d.org) and SDL 
+[Repository](https://github.com/Jusstox/Pinball-physics)
 
-Members:
-Marc Avante 
+# **Members**:
+### Marc Avante 
+[Github account](https://github.com/MarcoXAvante)
 
-Github account https://github.com/MarcoXAvante
+### Andrea Doña
 
-Andrea Doña
+[Github account](https://github.com/poderoculto5)
 
-Github account https://github.com/poderoculto5
+### Marta Llurba
 
-Marta Llurba
+[Github account](https://github.com/Marta-24)
 
-Github account https://github.com/Marta-24
+### Justo Tiscornia 
 
-Justo Tiscornia 
-
-Github account https://github.com/Jusstox
+[Github account](https://github.com/Jusstox)
 
 
-Github Link:
-https://github.com/Jusstox/Pinball-physics
 
-Controls:
+
+# Controls:
 
 Down: charge spring
 
