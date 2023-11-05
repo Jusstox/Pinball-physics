@@ -98,6 +98,31 @@ update_status ModuleSceneIntro::Update()
 		App->physics->gravityY -= 0.5f;
 	}
 
+	b2Fixture* skullFixture1 = skullBumper1->body->GetFixtureList();
+	b2Fixture* skullFixture2 = skullBumper2->body->GetFixtureList();
+	b2Fixture* skullFixture3 = skullBumper3->body->GetFixtureList();
+	b2Fixture* catFixture = catBumper->body->GetFixtureList();
+	b2Fixture* potionFixture1 = potion1->body->GetFixtureList();
+	b2Fixture* potionFixture2 = potion2->body->GetFixtureList();
+	if (skullFixture1 && skullFixture2 && skullFixture3) {
+		if (App->input->GetKey(SDL_SCANCODE_5) == KEY_DOWN) {
+			skullFixture1->SetRestitution(skullFixture1->GetRestitution() + 0.1f);
+			skullFixture2->SetRestitution(skullFixture2->GetRestitution() + 0.1f);
+			skullFixture3->SetRestitution(skullFixture3->GetRestitution() + 0.1f);
+			catFixture->SetRestitution(catFixture->GetRestitution() + 0.1f);
+			potionFixture1->SetRestitution(potionFixture1->GetRestitution() + 0.1f);
+			potionFixture2->SetRestitution(potionFixture2->GetRestitution() + 0.1f);
+		}
+		if (App->input->GetKey(SDL_SCANCODE_6) == KEY_DOWN) {
+			skullFixture1->SetRestitution(skullFixture1->GetRestitution() - 0.1f);
+			skullFixture2->SetRestitution(skullFixture2->GetRestitution() - 0.1f);
+			skullFixture3->SetRestitution(skullFixture3->GetRestitution() - 0.1f);
+			catFixture->SetRestitution(catFixture->GetRestitution() - 0.1f);
+			potionFixture1->SetRestitution(potionFixture1->GetRestitution() - 0.1f);
+			potionFixture2->SetRestitution(potionFixture2->GetRestitution() - 0.1f);
+		}
+	}
+
 
 	if (App->input->GetKey(SDL_SCANCODE_P) == KEY_DOWN) {
 		pause = !pause;
