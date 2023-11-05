@@ -24,20 +24,25 @@ This project is a pinball made by ourselves with [Box2D](https://box2d.org) and 
 
 # Controls:
 
-Down: charge spring
+- Down: charge spring
 
-Left Arrow: left bumpber
+- Left Arrow: left bumpber
 
-Right Arrow right bumper
+- Right Arrow right bumper
 
-F1 activate debug
+- F1 activate debug
 
-1 spawn ball on cursor
+- 1 spawn ball on cursor
 
-2 +1 life and spawn ball in start position
+- 2 +1 life and spawn ball in start position
 
-3 increases gravity
+- 3 increases gravity
 
-4 decreases gravity
+- 4 decreases gravity
 
-P pause the game
+- 5 Increse bumper restituition (knockback)
+
+- 6 Decrease bumper restituition (knockback)
+
+- P pause the game
+
