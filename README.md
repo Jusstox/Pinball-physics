@@ -35,3 +35,9 @@ F1 activate debug
 1 spawn ball on cursor
 
 2 +1 life and spawn ball in start position
+
+3 increases gravity
+
+4 decreases gravity
+
+P pause the game
