@@ -43,8 +43,10 @@ public:
 	int forceFlipper;
 	int scoreFont = -1;
 	char scoreText[10] = { "\0" };
+	char highscoreText[10] = { "\0" };
 	char livesText[10] = { "\0" };
 	int score;
+	int highscore;
 	int extra;
 	SDL_Texture* leftFlipperImage;
 	SDL_Texture* rightFlipperImage;

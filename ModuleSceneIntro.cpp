@@ -197,6 +197,13 @@ update_status ModuleSceneIntro::Update()
 	App->fonts->BlitText(5, 10, scoreFont, "score");
 	App->fonts->BlitText(-15, 20, scoreFont, scoreText);
 
+	if (score > highscore) {
+		highscore = score;
+	}
+
+	sprintf_s(highscoreText, 10, "%7d", highscore);
+	App->fonts->BlitText(65, 10, scoreFont, "highscore");
+	App->fonts->BlitText(45, 20, scoreFont, highscoreText);
 
 	sprintf_s(livesText, 10, "%7d", lives);
 	App->fonts->BlitText(460, 10, scoreFont, "lives");
@@ -211,7 +218,7 @@ void ModuleSceneIntro::OnCollision(PhysBody* bodyA, PhysBody* bodyB)
 
 void ModuleSceneIntro::Create() {
 	//Spring
-	springUp = App->physics->CreateRectangle(388, 558, 40, 20);
+	springUp = App->physics->CreateRectangle(388, 558, 42, 20);
 	springUp->body->SetFixedRotation(true);
 	springDown = App->physics->CreateRectangle(412, 580, 25, 10);
 	springDown->body->SetType(b2_staticBody);
