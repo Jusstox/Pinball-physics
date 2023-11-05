@@ -14,6 +14,7 @@ ModuleSceneIntro::ModuleSceneIntro(Application* app, bool start_enabled) : Modul
 	circle = NULL;
 	ray_on = false;
 	sensed = false;
+	pause = false;
 	forceSpring = 0;
 	score = 0;
 	extra = 0;
@@ -89,6 +90,18 @@ update_status ModuleSceneIntro::Update()
 		lives++;
 	}
 
+	if (App->input->GetKey(SDL_SCANCODE_3) == KEY_DOWN) {
+		App->physics->gravityY += 0.5f;
+	}
+
+	if (App->input->GetKey(SDL_SCANCODE_4) == KEY_DOWN) {
+		App->physics->gravityY -= 0.5f;
+	}
+
+
+	if (App->input->GetKey(SDL_SCANCODE_P) == KEY_DOWN) {
+		pause = !pause;
+	}
 	// Prepare for raycast ------------------------------------------------------
 	
 	iPoint mouse;

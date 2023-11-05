@@ -35,6 +35,7 @@ public:
 	PhysBody* potion1;
 	PhysBody* potion2;
 	PhysBody* sensor;
+	bool pause;
 	bool sensed;
 	int prevLives;
 	int lives;
