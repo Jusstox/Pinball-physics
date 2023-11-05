@@ -36,6 +36,10 @@ bool ModuleSceneIntro::Start()
 
 	circle = App->textures->Load("pinball/Ball.png"); 
 	bonus_fx = App->audio->LoadFx("pinball/bonus.wav");
+	skull = App->audio->LoadFx("pinball/skullsound2.wav");
+	potion = App->audio->LoadFx("pinball/osu-hit-sound.wav");
+	cat = App->audio->LoadFx("pinball/Cat-meow-mp3.wav");
+	App->audio->PlayMusic("pinball/This-Is-Halloween-The-Actual-Instrumental_.wav", 1.0f);
 	background = App->textures->Load("pinball/Background.png");
 	muelle = App->textures->Load("pinball/Muelle.png");
 

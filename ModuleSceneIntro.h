@@ -52,6 +52,10 @@ public:
 	SDL_Texture* muelle;
 	SDL_Texture* background;
 	uint bonus_fx;
+	uint cat;
+	uint skull;
+	uint potion;
+	uint song;
 	p2Point<int> ray;
 	bool ray_on;
 };

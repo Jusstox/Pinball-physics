@@ -492,35 +492,41 @@ void ModulePhysics::BeginContact(b2Contact* contact)
 		if (physA == App->scene_intro->catBumper && physB == c->data) {
 			App->scene_intro->score += 1000 + App->scene_intro->extra;
 			App->scene_intro->extra += 200;
+			App->audio->PlayFx(App->scene_intro->cat);
 		}
 
 
 		if (physA == App->scene_intro->skullBumper1 && physB == c->data) {
 			App->scene_intro->score += 500 + App->scene_intro->extra;
 			App->scene_intro->extra += 100;
+			App->audio->PlayFx(App->scene_intro->skull);
 		}
 
 
-		if (physA == App->scene_intro->skullBumper1 && physB == c->data) {
+		if (physA == App->scene_intro->skullBumper2 && physB == c->data) {
 			App->scene_intro->score += 500 + App->scene_intro->extra;
 			App->scene_intro->extra += 100;
+			App->audio->PlayFx(App->scene_intro->skull);
 		}
 
 
-		if (physA == App->scene_intro->skullBumper1 && physB == c->data) {
+		if (physA == App->scene_intro->skullBumper3 && physB == c->data) {
 			App->scene_intro->score += 500 + App->scene_intro->extra;
 			App->scene_intro->extra += 100;
+			App->audio->PlayFx(App->scene_intro->skull);
 		}
 
 
 		if (physA == App->scene_intro->potion1 && physB == c->data) {
 			App->scene_intro->score += 500 + App->scene_intro->extra;
 			App->scene_intro->extra += 100;
+			App->audio->PlayFx(App->scene_intro->potion);
 		}
 
 		if (physA == App->scene_intro->potion2 && physB == c->data) {
 			App->scene_intro->score += 500 + App->scene_intro->extra;
 			App->scene_intro->extra += 100;
+			App->audio->PlayFx(App->scene_intro->potion);
 		}
 
 		if (physA == App->scene_intro->leftFlipper && physB == c->data) {
