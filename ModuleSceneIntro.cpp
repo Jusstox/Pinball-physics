@@ -313,7 +313,7 @@ void ModuleSceneIntro::Create() {
 	};
 
 	int rightBook[8] = {
-	281, 367,
+	281, 363,
 	231, 367,
 	231, 376,
 	281, 376
